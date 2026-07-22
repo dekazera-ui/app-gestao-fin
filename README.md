@@ -5,8 +5,8 @@ sem coleta de dados**. Todos os lançamentos, salário e valores ficam
 salvos localmente no próprio dispositivo (IndexedDB), nunca em um
 servidor.
 
-🔗 **[Testar a demo ao vivo](https://dekazera-ui.github.io/app-gestao-fin/)**
-📱 **[Baixar o APK Android](../../releases)** (veja a seção Releases deste repositório)
+🔗 **[Testar a demo](https://dekazera-ui.github.io/app-gestao-fin/)**
+📱 **[Baixar o APK Android](../../releases)** (posteriormente será adicionado)
 
 ---
 
@@ -16,8 +16,8 @@ Este projeto nasceu de uma necessidade bem prática: substituir uma
 planilha de Excel de controle financeiro mensal por algo mais rápido
 de usar no dia a dia, direto do celular. A ideia central é simples —
 o salário do mês é distribuído entre categorias (Contas Fixas, Contas
-Variáveis, Guardar e um vale/benefício como Alelo), e o app calcula
-automaticamente quanto sobra ("Livre") e qual porcentagem cada
+Variáveis, Guardar e um vale/benefício), e o app calcula
+automaticamente quanto sobra ("Livre") e quanto cada
 categoria representa do total.
 
 ## Funcionalidades
@@ -42,9 +42,6 @@ categoria representa do total.
   <img src="screenshots/Tela inicial.png" width="220" alt="Tela inicial" />
   <img src="screenshots/Tela Lançamento.png" width="220" alt="Adicionar lançamento" />
 </p>
-
-> Substitua os arquivos em `/screenshots` pelas capturas reais do seu
-> app rodando (print da tela do navegador ou do celular já bastam).
 
 ## Tecnologias utilizadas
 
