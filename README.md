@@ -39,9 +39,8 @@ categoria representa do total.
 ## Capturas de tela
 
 <p align="center">
-  <img src="screenshots/tela-inicio.png" width="220" alt="Tela inicial" />
-  <img src="screenshots/tela-totais.png" width="220" alt="Tela de totais" />
-  <img src="screenshots/tela-adicionar.png" width="220" alt="Adicionar lançamento" />
+  <img src="screenshots/Tela inicial.png" width="220" alt="Tela inicial" />
+  <img src="screenshots/Tela Lançamento.png" width="220" alt="Adicionar lançamento" />
 </p>
 
 > Substitua os arquivos em `/screenshots` pelas capturas reais do seu
