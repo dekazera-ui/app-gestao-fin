@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Gestão Financeira</title>
+<meta name="theme-color" content="#070b1f" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="app">
+
+  <!-- ===== APP PRINCIPAL ===== -->
+  <section id="screen-main" class="screen active">
+
+    <header class="app-header">
+      <div class="header-top">
+        <h1>Gestão Financeira</h1>
+      </div>
+
+      <div class="month-nav">
+        <button id="month-prev" class="icon-btn" aria-label="Mês anterior">‹</button>
+        <span id="month-label">—</span>
+        <button id="month-next" class="icon-btn" aria-label="Próximo mês">›</button>
+      </div>
+
+      <div class="summary-card">
+        <div class="donut-row">
+          <div class="donut-wrap">
+            <div id="donut" class="donut"></div>
+            <div class="donut-center">
+              <span id="donut-salario">R$ 0</span>
+              <span class="donut-sub">salário</span>
+            </div>
+          </div>
+          <ul class="legend">
+            <li><span class="dot dot-variaveis"></span><span id="legend-variaveis">0% variáveis</span></li>
+            <li><span class="dot dot-livre"></span><span id="legend-livre">0% livres</span></li>
+            <li><span class="dot dot-fixas"></span><span id="legend-fixas">0% fixas</span></li>
+            <li><span class="dot dot-guardar"></span><span id="legend-guardar">0% guardar</span></li>
+          </ul>
+        </div>
+
+        <div class="alelo-bar">
+          <div id="alelo-fill" class="alelo-fill" style="width:0%"></div>
+          <span class="alelo-label-left"><span id="alelo-name-label">Alelo</span> <span id="alelo-pct">0%</span></span>
+          <span class="alelo-label-right" id="alelo-total-label">R$ 0</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="app-main">
+
+      <!-- PAINEL TOTAIS / DETALHE / AJUSTES -->
+      <div id="panel-totais" class="panel card">
+        <div class="panel-header">
+          <h2 id="panel-title">Totais</h2>
+          <button id="btn-ajustes" class="icon-btn" title="Ajustes">⚙️</button>
+        </div>
+
+        <div id="livre-row" class="total-row total-row-livre">
+          <div class="total-row-main">
+            <span class="total-row-label">LIVRE</span>
+            <span class="total-row-value" id="livre-valor">R$ 0</span>
+          </div>
+          <span class="total-row-badge" id="livre-badge">0% disponível</span>
+        </div>
+
+        <div id="category-list" class="category-list"></div>
+
+        <div id="category-detail" class="category-detail hidden">
+          <button id="btn-back-detail" class="back-btn">‹ Voltar</button>
+          <div class="total-row" id="detail-summary-row">
+            <div class="total-row-main">
+              <span class="total-row-label" id="detail-label">—</span>
+              <span class="total-row-value" id="detail-valor">R$ 0</span>
+            </div>
+            <span class="total-row-badge" id="detail-badge">0%</span>
+          </div>
+          <ul id="detail-list" class="lancamento-list"></ul>
+          <p id="detail-empty" class="muted hidden">Nenhum lançamento nesta categoria ainda.</p>
+        </div>
+
+        <div id="ajustes-form" class="ajustes-form hidden">
+          <button id="btn-back-ajustes" class="back-btn">‹ Voltar</button>
+          <label class="field-label" for="ajustes-salario">Definir valor Salário:</label>
+          <input type="number" id="ajustes-salario" class="field-input" inputmode="decimal" step="0.01" placeholder="0,00" />
+
+          <label class="field-label" for="ajustes-alelo-nome">Nome do Alelo:</label>
+          <input type="text" id="ajustes-alelo-nome" class="field-input" placeholder="Ex: Alelo, Vale Refeição..." maxlength="30" />
+
+          <label class="field-label" for="ajustes-alelo">Definir valor total do Alelo:</label>
+          <input type="number" id="ajustes-alelo" class="field-input" inputmode="decimal" step="0.01" placeholder="0,00" />
+
+          <button id="ajustes-copy-prev" class="link-btn">Copiar valores do mês anterior</button>
+          <button id="ajustes-save" class="primary-btn full">Salvar</button>
+          <p id="ajustes-saved-msg" class="muted hidden">Ajustes salvos ✓</p>
+        </div>
+      </div>
+
+      <!-- PAINEL ADICIONAR LANÇAMENTO -->
+      <div id="panel-add" class="panel card add-panel">
+        <button id="btn-toggle-add" class="add-toggle">
+          <span class="add-icon-circle">＋</span>
+          <span id="add-toggle-label">Adicionar Lançamento</span>
+        </button>
+
+        <div id="add-form" class="add-form hidden">
+          <button id="btn-back-add" class="back-btn">‹ Voltar</button>
+
+          <label class="field-label" for="add-valor">Valor:</label>
+          <input type="number" id="add-valor" class="field-input" inputmode="decimal" step="0.01" placeholder="0,00" />
+
+          <label class="field-label" for="add-nome">Nome (opcional):</label>
+          <input type="text" id="add-nome" class="field-input" placeholder="Ex: Aluguel, Mercado..." maxlength="60" />
+
+          <label class="field-label">Categoria:</label>
+          <div id="add-categoria-options" class="categoria-options"></div>
+
+          <p id="add-error" class="error-text hidden"></p>
+          <button id="add-submit" class="primary-btn full">Adicionar</button>
+        </div>
+      </div>
+
+    </main>
+  </section>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

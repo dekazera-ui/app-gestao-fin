@@ -1,0 +1,18 @@
+{
+  "name": "gestao-financeira-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "App pessoal de gestão financeira - 100% offline, sem servidor, dados salvos localmente no dispositivo.",
+  "scripts": {
+    "sync": "npx cap sync",
+    "android:open": "npx cap open android",
+    "android:build": "cd android && (./gradlew assembleDebug || gradlew.bat assembleDebug)"
+  },
+  "dependencies": {
+    "@capacitor/android": "latest",
+    "@capacitor/core": "latest"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "latest"
+  }
+}

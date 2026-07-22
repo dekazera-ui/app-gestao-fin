@@ -1,0 +1,12 @@
+{
+  "appId": "br.com.diego.gestaofinanceira",
+  "appName": "Gestão Financeira",
+  "webDir": "www",
+  "bundledWebRuntime": false,
+  "android": {
+    "allowMixedContent": false
+  },
+  "server": {
+    "androidScheme": "https"
+  }
+}

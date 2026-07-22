@@ -1,0 +1,12 @@
+# Dependências
+node_modules/
+
+# Build gerado pelo Capacitor/Android (não versionamos, cada um gera o seu)
+mobile/android/
+mobile/ios/
+mobile/*.apk
+mobile/*.aab
+
+# Sistema
+.DS_Store
+Thumbs.db
