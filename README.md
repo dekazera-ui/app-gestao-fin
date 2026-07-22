@@ -5,7 +5,7 @@ sem coleta de dados**. Todos os lançamentos, salário e valores ficam
 salvos localmente no próprio dispositivo (IndexedDB), nunca em um
 servidor.
 
-🔗 **[Testar a demo ao vivo](https://SEU_USUARIO.github.io/app-gestao-fin/)**
+🔗 **[Testar a demo ao vivo](https://dekazera-ui.github.io/app-gestao-fin/)**
 📱 **[Baixar o APK Android](../../releases)** (veja a seção Releases deste repositório)
 
 ---
