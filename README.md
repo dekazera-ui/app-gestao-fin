@@ -1,7 +1,6 @@
 # 💰 Gestão Financeira
 
-App pessoal de gestão financeira mensal — **100% offline, sem backend,
-sem coleta de dados**. Todos os lançamentos, salário e valores ficam
+App pessoal de gestão financeira mensal — **100% offline, grátis e sem exposição dos dados**. Todos os lançamentos, salário e valores ficam
 salvos localmente no próprio dispositivo (IndexedDB), nunca em um
 servidor.
 
